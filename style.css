@@ -1,0 +1,280 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* efeito fadeIn ao atualizar página */
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+header {
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+    max-width: 940px;
+}
+
+.logo {
+    position: absolute;
+    max-width: 940px;
+}
+
+.links {
+    margin: auto 28.2%;
+}
+
+.links a {
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #111111;
+    margin: auto 4.1%;
+}
+
+.links a:hover {
+    font-weight: bold;
+}
+
+
+/* classe para atribuir efeito fadeIn aos elementos */
+
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30px 30px;
+    position: relative;
+}
+
+main h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    color: #111111;
+    margin-bottom: 0.9%;
+}
+
+main p {
+    opacity: 0.7;
+    max-width: 300px;
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+}
+
+main img {
+    position: absolute;
+    height: 300px;
+    width: 216px;
+    right: 7.1%;
+    bottom: 0;
+}
+
+
+/* agrupa dois texto */
+
+#container {
+    position: absolute;
+    left: 6.3%;
+    top: 30%;
+}
+
+.title {
+    max-width: 940px;
+    margin: 30px auto 10px;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-family: 'Roboto-Bold';
+    color: #111111;
+    line-height: 34px;
+}
+
+
+/* Cardapio mais acessados */
+
+.foods {
+    max-width: 940px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.foods img {
+    border-radius: 15px 15px;
+    width: 300px;
+    height: 140px;
+}
+
+.image_container img {
+    width: 100%;
+    margin: 0 auto 8px auto;
+}
+
+.content__food {
+    padding: 1.8% 0;
+}
+
+.content__food p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+}
+
+.chef__food p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 24px;
+}
+
+footer {
+    padding: 10px;
+    background: #EEEEEE;
+    text-align: center;
+    margin: 4.6% 0 0;
+}
+
+
+/* ABOUT */
+
+#container__about {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+#container__about p {
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.subtitle {
+    max-width: 940px;
+    margin: 2.7% auto 10px;
+}
+
+.subtitle h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 20px;
+    color: #111111;
+}
+
+
+/* MODAL */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 600px;
+    height: 413px;
+    margin: 22vh auto;
+    position: relative;
+    border-radius: 16px 16px;
+}
+
+.modal .close-modal {
+    color: #999999;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+    font-family: 'Roboto-Regular';
+}
+
+.modal .close-modal p {
+    margin-top: 10.7%;
+    text-align: center;
+}
+
+
+/* MODAL ACTIVE */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content img {
+    margin: 20px;
+    width: 560px;
+    height: 200px;
+    border-radius: 15px 15px;
+}
+
+#modal-title {
+    text-align: center;
+    font-family: 'Roboto-Regular';
+    font-size: 24px;
+    line-height: 34px;
+    color: #111111;
+}
+
+#modal-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    color: #777777;
+    font-family: 'Roboto-Regular';
+}
